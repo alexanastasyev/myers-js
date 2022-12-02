@@ -84,7 +84,7 @@ export function DynamicList(listId, drawItem, areItemsTheSame) {
             }
         }
 
-        Object.assign(currentList, newItems);
+        currentList = JSON.parse(JSON.stringify(newItems));
     }
 
 }
